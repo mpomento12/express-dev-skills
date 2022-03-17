@@ -12,11 +12,12 @@
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
-          <a href="/skills/<%= s.id %>"><%= s.rapper %></a>
+          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
           <%= s.goat ? 'goat' : 'not goat' %>
         </li>
       <% }); %>
     </ul>
+    <a href="/skills/new">Add New Rappers</a>
   </body>
 </html>
